@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kristo Papadhimitri — Portfolio</title>
+  <meta name="description" content="Senior Data Analyst in NYC. Causal inference, time-series forecasting, and NLP pipelines on 500M+ record datasets. Portfolio of quantitative projects." />
+
+  <!-- Fonts: STIX Two Text (math-journal serif) + IBM Plex Sans/Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#top">Kristo Papadhimitri<span class="brand-dot">.</span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-inner">
+        <p class="eyebrow mono">&sect;0&nbsp;&nbsp;New York, NY</p>
+        <h1 class="hero-title">Finding the signal<br />in half a billion rows.</h1>
+        <p class="hero-bio">
+          Senior Data Analyst with 8+ years in utility analytics, applying causal
+          inference, time-series forecasting, and NLP to problems that resist easy answers.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">View work</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+        <p class="hero-annotation mono" aria-hidden="true">&ycirc;&nbsp;=&nbsp;&beta;&#8320;&nbsp;+&nbsp;&beta;&#8321;x&nbsp;&nbsp;&middot;&nbsp;&nbsp;fit&nbsp;drawn&nbsp;live</p>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="section-inner">
+        <p class="eyebrow mono">&sect;1&nbsp;&nbsp;About</p>
+        <div class="about-grid">
+          <div class="about-copy">
+            <h2>Trained as a mathematician.<br />Tested at utility scale.</h2>
+            <p>
+              I've spent eight years at Consolidated Edison turning New York City's messiest
+              data into decisions &mdash; designing SQL/SAS ETL pipelines over <strong>500M+
+              smart-meter records</strong> that feed demand forecasting and rate design models,
+              and refactoring legacy workflows to cut manual processing time by 25%.
+            </p>
+            <p>
+              Along the way I completed an MS in Computer Science at <strong>NYU Courant</strong>
+              (on top of a BS in Mathematics from NYU Tandon, with minors in Economics and
+              Finance), and built a toolkit centered on <strong>causal inference</strong> &mdash;
+              difference-in-differences, synthetic control &mdash; plus time-series analysis
+              and NLP pipelines.
+            </p>
+            <p>
+              What drives me is the same thing that drew me to competition math as a kid:
+              problems with genuine resistance. I'm looking for work where the questions are
+              hard, the stakes are real, and the answer isn't in the back of the book.
+            </p>
+          </div>
+          <aside class="about-skills" aria-label="Technical skills">
+            <h3 class="mono skills-heading">Toolkit</h3>
+            <dl class="skills-list">
+              <div class="skill-row">
+                <dt>Languages</dt>
+                <dd>Python &middot; SQL &middot; SAS</dd>
+              </div>
+              <div class="skill-row">
+                <dt>Causal inference</dt>
+                <dd>Diff-in-differences &middot; Synthetic control</dd>
+              </div>
+              <div class="skill-row">
+                <dt>Machine learning</dt>
+                <dd>scikit-learn &middot; TensorFlow &middot; Keras</dd>
+              </div>
+              <div class="skill-row">
+                <dt>NLP</dt>
+                <dd>FinBERT &middot; Transformer models</dd>
+              </div>
+              <div class="skill-row">
+                <dt>Time series</dt>
+                <dd>Forecasting &middot; Granger causality</dd>
+              </div>
+              <div class="skill-row">
+                <dt>Data &amp; viz</dt>
+                <dd>ETL at scale &middot; Tableau &middot; Git</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section section-alt" id="work">
+      <div class="section-inner">
+        <p class="eyebrow mono">&sect;2&nbsp;&nbsp;Selected work</p>
+        <h2>Projects with a hypothesis behind them.</h2>
+
+        <div class="project-grid">
+
+          <article class="project-card">
+            <p class="mono card-index">P&middot;1</p>
+            <h3>Federal Reserve Communications &mdash; Causal Inference</h3>
+            <p class="card-desc">
+              Do FOMC announcements move markets? Difference-in-differences with clustered
+              standard errors across 96 announcements (2014&ndash;2025) identified a
+              statistically significant 12 basis point volatility premium in rate-sensitive
+              sectors (p&nbsp;=&nbsp;0.043), validated by parallel pre-trends. Synthetic
+              control on the March 2020 emergency cuts showed financials underperformed
+              their counterfactual by 13.6%.
+            </p>
+            <ul class="tech-list mono" aria-label="Technologies">
+              <li>Python</li><li>pandas</li><li>statsmodels</li><li>SciPy</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/AirKristo/fed-volatility-causal-inference" target="_blank" rel="noopener">GitHub&nbsp;&#8599;</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <p class="mono card-index">P&middot;2</p>
+            <h3>Sentiment-Driven Market Forecasting Pipeline</h3>
+            <p class="card-desc">
+              An end-to-end NLP pipeline ingesting 2&nbsp;GB+ of Reddit posts from four
+              finance subreddits and every 119th Congress bill, scored daily with FinBERT
+              and joined to S&amp;P 500 sector returns. The finding: legislative sentiment
+              is a 2-day lead indicator (p&nbsp;&lt;&nbsp;0.05 in every Granger-causality
+              test at lag&nbsp;2) &mdash; Reddit and news never were.
+            </p>
+            <ul class="tech-list mono" aria-label="Technologies">
+              <li>Python</li><li>FinBERT</li><li>Granger causality</li><li>Yahoo Finance API</li>
+            </ul>
+            <div class="card-links">
+              <!-- TODO: replace with the real repo name -->
+              <a href="https://github.com/AirKristo/REPO-NAME" target="_blank" rel="noopener">GitHub&nbsp;&#8599;</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <p class="mono card-index">P&middot;3</p>
+            <h3>Yankees Offseason Sentiment Tracker</h3>
+            <p class="card-desc">
+              A fully automated tracker that scores fan and media sentiment on Yankees
+              offseason news using a RoBERTa model, refreshed on a schedule by GitHub
+              Actions with zero manual steps. Small in scope by design &mdash; the point
+              was an unattended pipeline that keeps itself current.
+            </p>
+            <ul class="tech-list mono" aria-label="Technologies">
+              <li>Python</li><li>RoBERTa</li><li>GitHub Actions</li>
+            </ul>
+            <div class="card-links">
+              <!-- TODO: replace with the real repo name -->
+              <a href="https://github.com/AirKristo/REPO-NAME" target="_blank" rel="noopener">GitHub&nbsp;&#8599;</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="section-inner">
+        <p class="eyebrow mono">&sect;3&nbsp;&nbsp;Contact</p>
+        <div class="contact-grid">
+          <div class="contact-copy">
+            <h2>Let's talk.</h2>
+            <p>
+              I'm exploring full-time opportunities in NYC (hybrid or remote). If your
+              team works on hard quantitative problems &mdash; forecasting, causal
+              questions, messy data at scale &mdash; I'd love to connect.
+            </p>
+            <ul class="contact-links">
+              <li><a href="mailto:papadhimitrik@gmail.com" class="mono">papadhimitrik@gmail.com</a></li>
+              <li><a href="https://www.linkedin.com/in/kristo-papadhimitri/" target="_blank" rel="noopener" class="mono">linkedin.com/in/kristo-papadhimitri</a></li>
+              <li><a href="https://github.com/AirKristo" target="_blank" rel="noopener" class="mono">github.com/AirKristo</a></li>
+            </ul>
+          </div>
+
+          <!-- Form posts to Formspree (free tier). See README for setup. -->
+          <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <p class="form-status mono" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="mono">Kristo Papadhimitri &middot; Queens, NY</p>
+      <p class="mono footer-note">Built by hand. No template.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
