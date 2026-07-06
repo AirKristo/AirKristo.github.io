@@ -155,15 +155,19 @@
 
           <article class="project-card">
             <p class="mono card-index">P&middot;3</p>
-            <h3>Yankees Offseason Sentiment Tracker</h3>
+            <h3>Music Recommendation System</h3>
             <p class="card-desc">
-              A fully automated tracker that scores fan and media sentiment on Yankees
-              offseason news using a RoBERTa model, refreshed on a schedule by GitHub
-              Actions with zero manual steps. Small in scope by design &mdash; the point
-              was an unattended pipeline that keeps itself current.
+              A hybrid recommender built on a 4,000-playlist slice of Spotify's Million
+              Playlist Dataset, enriched with audio features pulled batch-by-batch from
+              the Spotify Web API. Content-based filtering builds a user profile from a
+              playlist's track features and ranks candidates by cosine similarity;
+              collaborative filtering scores tracks by co-occurrence across playlists.
+              Blending the two (&alpha;&nbsp;=&nbsp;0.6) beat every baseline &mdash;
+              popularity, logistic regression, decision tree &mdash; and each standalone
+              method on its own.
             </p>
             <ul class="tech-list mono" aria-label="Technologies">
-              <li>Python</li><li>RoBERTa</li><li>GitHub Actions</li>
+              <li>Python</li><li>scikit-learn</li><li>Spotify API</li>
             </ul>
             <div class="card-links">
               <!-- TODO: replace with the real repo name -->
@@ -183,9 +187,8 @@
           <div class="contact-copy">
             <h2>Let's talk.</h2>
             <p>
-              I'm exploring full-time opportunities in NYC (hybrid or remote). If your
-              team works on hard quantitative problems &mdash; forecasting, causal
-              questions, messy data at scale &mdash; I'd love to connect.
+              I'm exploring full-time opportunities in NYC (hybrid or remote).
+              If your team works on hard quantitative problems, I'd love to connect.
             </p>
             <ul class="contact-links">
               <li><a href="mailto:papadhimitrik@gmail.com" class="mono">papadhimitrik@gmail.com</a></li>
@@ -195,7 +198,7 @@
           </div>
 
           <!-- Form posts to Formspree (free tier). See README for setup. -->
-          <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <form class="contact-form" id="contact-form" action="https://formspree.io/f/xpqgnqdj" method="POST" novalidate>
             <div class="form-field">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" autocomplete="name" required />
