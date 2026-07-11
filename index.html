@@ -136,20 +136,21 @@
 
           <article class="project-card">
             <p class="mono card-index">P&middot;2</p>
-            <h3>Sentiment-Driven Market Forecasting Pipeline</h3>
+            <h3>PM2.5 Pollution &amp; Mortality</h3>
             <p class="card-desc">
-              An end-to-end NLP pipeline ingesting 2&nbsp;GB+ of Reddit posts from four
-              finance subreddits and every 119th Congress bill, scored daily with FinBERT
-              and joined to S&amp;P 500 sector returns. The finding: legislative sentiment
-              is a 2-day lead indicator (p&nbsp;&lt;&nbsp;0.05 in every Granger-causality
-              test at lag&nbsp;2) &mdash; Reddit and news never were.
+              A Hadoop/MapReduce pipeline joining 4M+ daily EPA PM2.5 readings with two
+              decades of CDC county-level mortality data via a replicated join on a
+              distributed cache, then profiled and queried with HiveQL across race and
+              age splits. The link between pollution and mortality was statistically
+              significant (p&nbsp;&lt;&nbsp;0.0001), though R&sup2;&nbsp;=&nbsp;0.131
+              shows air quality alone explains only a fraction of the variance &mdash;
+              race and age proved to be confounders in their own right.
             </p>
             <ul class="tech-list mono" aria-label="Technologies">
-              <li>Python</li><li>FinBERT</li><li>Granger causality</li><li>Yahoo Finance API</li>
+              <li>Java</li><li>Hadoop MapReduce</li><li>Hive</li><li>HDFS</li>
             </ul>
             <div class="card-links">
-              <!-- TODO: replace with the real repo name -->
-              <a href="https://github.com/AirKristo/REPO-NAME" target="_blank" rel="noopener">GitHub&nbsp;&#8599;</a>
+              <a href="https://github.com/AirKristo/pm25-pollution-mortality" target="_blank" rel="noopener">GitHub&nbsp;&#8599;</a>
             </div>
           </article>
 
